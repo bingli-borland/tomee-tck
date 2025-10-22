@@ -214,6 +214,7 @@ abstract class CommandSupport {
         builder.append("servlet-api.jar")
         builder.append("taglibs-shade-*.jar")
         builder.append("websocket-api.jar")
+        builder.append("websocket-client-api.jar")
         builder.directory = javaHome() +"/lib/"
         // builder.append("rt.jar")
         builder.getPath("openejb.jee.classes")
@@ -260,7 +261,7 @@ abstract class CommandSupport {
         // builder.append("cxf-rt-frontend-jaxrs-*.jar")
         // builder.append("cxf-rt-rs-sse-*.jar")
         builder.append("neethi-*.jar")
-        builder.append("wsdl4j-*.jar")
+        //builder.append("wsdl4j-*.jar")
         builder.append("woodstox-core-*.jar")
         builder.append("stax2-api-*.jar")
         builder.append("xmlschema-core-*.jar")

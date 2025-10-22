@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<settings>
+  <localRepository>/mnt/c/Users/bes/.m2/repository</localRepository>
+  <profiles>
+    <profile>
+      <id>javaee-tck-environment</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+              <javaee8.cts.home>/mnt/e/project/jakartaeetck-8.0.2</javaee8.cts.home>
+              <javaee8.ri.home>/mnt/d/appserver/jakartaeetck/glassfish5.1/glassfish</javaee8.ri.home>
+              <jakartaee9.ri.home>/mnt/e/project/jakartaeetck-9.1.0/glassfish-6.2.5/glassfish</jakartaee9.ri.home>
+              <jakartaee9.cts.home>/mnt/e/project/jakartaeetck-9.1.0</jakartaee9.cts.home>
+              <jakartaee10.ri.home>/mnt/e/project/jakartaeetck-10.0.0/glassfish-7/glassfish</jakartaee10.ri.home>
+              <jakartaee10.cts.home>/mnt/e/project/jakartaeetck-10.0.0</jakartaee10.cts.home>
+      </properties>
+    </profile>
+  </profiles>
+    <proxies>
+    <proxy>
+      <id>my-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol> <!-- 协议：http/https -->
+      <host>127.0.0.1</host> <!-- 代理服务器地址 -->
+      <port>9783</port> <!-- 代理端口 -->
+      <username></username> <!-- 如果需要认证 -->
+      <password></password>
+      <nonProxyHosts>localhost|127.0.0.1</nonProxyHosts> <!-- 不代理的主机 -->
+    </proxy>
+  </proxies>
+</settings>

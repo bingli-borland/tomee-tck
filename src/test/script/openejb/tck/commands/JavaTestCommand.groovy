@@ -245,7 +245,6 @@ class JavaTestCommand
                 // tomcat requires add-opens to function properly as well
                 def matches = containerJavaVersion ==~ /1[0-9]/;
                 if (matches || new File(containerJavaHome as String, 'jmods').exists()) {
-                    containerJavaOpts += " -Djava.locale.providers=COMPAT,SPI"
                     containerJavaOpts += " --add-opens=java.base/java.lang=ALL-UNNAMED"
                     containerJavaOpts += " --add-opens=java.base/java.io=ALL-UNNAMED"
                     containerJavaOpts += " --add-opens=java.base/java.util=ALL-UNNAMED"
