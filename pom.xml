@@ -75,6 +75,7 @@
 
 
     <!-- externalized ports for tx.jte file -->
+	<webcontainer.default.port>8080</webcontainer.default.port>
     <webcontainer.default.host>localhost</webcontainer.default.host>
     <webcontainer.ri.host>localhost</webcontainer.ri.host>
     <webcontainer.ri.port>8000</webcontainer.ri.port>
@@ -749,7 +750,7 @@
             </goals>
             <configuration>
               <portNames>
-                <portName>webcontainer.default.port</portName>
+			  <!-- <portName>webcontainer.default.port</portName> -->
                 <portName>webcontainer.default.ssl.port</portName>
                 <portName>webcontainer.default.clientcert.port</portName>
                 <portName>webcontainer.default.shutdown.port</portName>
